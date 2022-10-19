@@ -1,0 +1,118 @@
+:root{
+    --primary-color:white;
+    /* --secondary-color: */
+    --action-color:rgb(128,131,255);
+    --gray-100:#f8f9fa;
+}
+
+.navbar{
+    height: 18vh;
+}
+
+.navbar .container-fluid  .navbar-brand{
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size:30px;
+}
+
+.navbar .container-fluid  .navbar-brand span{
+    color: var(--action-color);
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.navbar ul li a{
+    letter-spacing: 2px;
+    border-bottom: 3px solid var(--gray-100);
+    font-weight: 470;
+    color: black!important;
+}
+.navbar ul li a:hover{
+    border-bottom: 3px solid var(--action-color);
+}
+.navbar ul li a:active{
+    background-color: var(--action-color) !important;
+    color: var(--primary-color)!important;
+ 
+}
+.navbar ul li .active{
+    background-color: var(--action-color) !important;
+    color: var(--primary-color)!important;
+}
+
+
+
+/* navbar toggle btn */
+.navbar .container-fluid .navbar-toggler span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: black;
+}
+.navbar .container-fluid .navbar-toggler span + span{
+    width: 18px;
+    margin-top: 5px;
+}
+.navbar .container-fluid .navbar-toggler span + span + span{
+    width: 15px;
+    
+}
+/* theme row */
+.container-fluid .row .theme-row{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-fluid .row .theme-row .theme-icon{
+    position: fixed;
+    margin-right: 20px;
+    margin-top: 60px;
+    height: 40px;
+    width: 40px;
+    color: var(--action-color);
+    z-index: 1;
+}
+
+
+/* MOBILE VIEW */
+@media(max-width:767px) {
+    .navbar ul{
+        gap: 5px;
+        width: 80%;
+        padding-right: 20px!important;
+        background: var(--gray-100);
+        text-align: center;
+    }
+    .navbar ul li{
+        text-align: center;
+    }
+    
+}
+
+
+/* 
+
+TABLET VIEW 
+
+*/
+@media(max-width:991px){
+    .navbar ul{
+       
+        width: 90%;
+    }
+    .navbar ul li{
+        text-align: center;
+    }
+    .container-fluid .row .name-section h2{
+        text-align: center;
+    }
+    .container-fluid .row .title-section h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+}
+
+

@@ -1,0 +1,170 @@
+/* 
+
+styling about section 
+
+
+*/
+
+.about-section .row div{
+    /* border: 2px solid red; */
+}
+.about-section .row{
+    /* border: 2px solid red; */
+    /* height: 100vh; */
+}
+.about-section .pic-section{
+    height: 70vh!important;
+}
+
+.about-section .row .pic-section .profile-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    height: 410px;
+    width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+.about-section .row .info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.about-section  .row  .page-heading{
+    text-align: center;
+    position: relative;
+}
+.about-section  .row  .page-heading::before{
+position: absolute;
+content: "";
+width: 160px;
+height: 10px;
+left: 40%;
+bottom: -25%;
+transform: translateX(30%);
+background: var(--action-color);
+}
+.about-section  .row  .page-heading::after{
+position: absolute;
+content: "me";
+font-size: 20px;
+width: 60px;
+height: 15px;
+padding-top:auto;
+padding-bottom:auto;
+right: 47%;
+bottom: -25%;
+background: var(--primary-color);   
+}
+.about-section .row .info-section span{
+    color: var(--action-color);
+}
+.about-section .row .info-section .btn-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   
+}
+.about-section .row .info-section .btn-section button{  
+    border-radius: 20px;
+    height: 60px;
+    width: 160px;
+    border: 2px solid;
+    background-color: var(--action-color);
+    color: var(--primary-color);
+    margin: 0 100px;
+}
+
+
+/* MOBILE VIEW */
+@media(max-width:767px) {
+     /* 
+    
+    about section mobile view styling 
+    
+    */
+    .about-section .row .pic-section .profile-img{ 
+        margin-top: 4vh;
+        height: 250px;
+        width: 210px;
+    }
+    .about-section .row .info-section{
+        /* display: flex;
+        justify-content: center;
+        flex-direction: row; */
+        margin-top: 60px;
+       
+    }
+    .about-section .row .info-section .btn-section{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+           
+        }
+        .about-section .row .info-section .btn-section button{  
+            margin: 0 10px;
+            width: 140px;
+            height: 50px;
+        }
+        .about-section .pic-section{
+            height: 40vh!important;
+        }
+        .about-section  .row  .page-heading::before{
+            width: 140px;
+            height: 10px;
+            left: 40%;
+            bottom: -25%;
+            transform: translateX(-30%);
+            }
+            /* .about-section  .row  .page-heading::after{
+            position: absolute;
+            content: "me";
+            font-size: 20px;
+            width: 60px;
+            height: 15px;
+            padding-top:auto;
+            padding-bottom:auto;
+            right: 47%;
+            bottom: -25%;
+            background: var(--primary-color);   
+            } */
+}
+
+
+/* 
+
+TABLET VIEW 
+
+*/
+@media(max-width:991px){
+     /* .about-section .row .pic-section .profile-img{ 
+        margin-top: 4vh;
+        height: 250px;
+        width: 210px;
+    } */
+    /* .about-section .row .info-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 60px;
+       
+    } */
+    /* .about-section .row .info-section .btn-section{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+           
+        } */
+        /* .about-section .row .info-section .btn-section button{  
+            margin: 0 10px;
+            width: 140px;
+            height: 50px;
+        }
+        .about-section .pic-section{
+            height: 40vh!important;
+        } */
+        
+    
+}

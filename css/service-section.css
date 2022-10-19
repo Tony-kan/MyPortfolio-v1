@@ -1,0 +1,70 @@
+/* 
+
+styling services section 
+
+
+*/
+.service-section  .row  .page-heading{
+    position: relative;
+}
+
+.service-section  .row  .page-heading::before{
+    position: absolute;
+    content: "";
+    width: 190px;
+    height: 10px;
+    left: 40%;
+    bottom: -25%;
+    transform: translateX(15%);
+    background: var(--action-color);
+    }
+    .service-section  .row  .page-heading::after{
+    position: absolute;
+    content: "i offer";
+    font-size: 20px;
+    width: 60px;
+    height: 15px;
+    padding-top:auto;
+    padding-bottom:auto;
+    right: 47%;
+    bottom: -25%;
+    background: var(--primary-color);   
+    }
+.container-fluid .row .card{
+    height: 200px!important;
+    width: 300px!important;
+}
+.container-fluid .row .card .service-icon{
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 60px!important;
+    height: 60px!important;
+    color: var(--action-color);
+    /* background-color: var(--action-color); */
+}
+
+
+
+
+/* MOBILE VIEW */
+@media(max-width:767px) {
+
+    .service-section  .row  .page-heading::before{
+        width: 140px;
+        height: 10px;
+        left: 40%;
+        bottom: -25%;
+        transform: translateX(-30%);
+        }
+    
+}
+
+
+/* 
+
+TABLET VIEW 
+
+*/
+@media(max-width:991px){
+    
+}
