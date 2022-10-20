@@ -56,17 +56,18 @@
     text-align: center;
     gap: 20px;
 }
+.portfolio-section .project-card .card .card-body .card-title{ 
+    color:black;
+   margin-bottom: 50px;
+}
 
    .portfolio-section .project-card .card .card-body .view-detail-btn{ 
-    /* border: 2px solid red!important;  */
     border-radius: 10px;
     height: 40px;
     width: 160px;
-    border: 2px solid;
     background-color: var(--action-color);
     color: var(--primary-color);
 }
-
 
 
 
