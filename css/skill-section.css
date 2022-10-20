@@ -1,0 +1,59 @@
+.skill-section .row{
+    /* border: 2px solid red; */
+}
+.skill-section .row div{
+    /* border: 2px solid red; */
+}
+.skill-section .text-section{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    /* border: 5px solid green; */
+    gap: 5px;
+    height: 60vh!important;
+    margin-bottom: 60px;
+   
+}
+/* .skill-section .text-section h2{ 
+border: 5px solid;
+} */
+.skill-section .row  button{  
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    height: 60px;
+    width: 160px;
+    background-color: var(--action-color);
+    color: var(--primary-color);
+}
+.skill-section .row .bar{
+    width: 50%;
+    height: 60px;
+}
+.skill-section .row .bar .info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill-section .row .bar .skill-bar{
+    /* height: 200px!important; */
+    background-color: var(--action-color)!important;
+
+}
+
+/* MOBILE VIEW */
+@media(max-width:767px) {
+    .skill-section .text-section{
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        /* border: 5px solid green; */
+        gap: 5px;
+        height: 30vh!important;
+        margin-bottom: 60px;
+       
+    }
+}
+
+

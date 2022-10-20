@@ -5,13 +5,6 @@ styling about section
 
 */
 
-.about-section .row div{
-    /* border: 2px solid red; */
-}
-.about-section .row{
-    /* border: 2px solid red; */
-    /* height: 100vh; */
-}
 .about-section .pic-section{
     height: 70vh!important;
 }
