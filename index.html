@@ -7,11 +7,13 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/all.min.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/home-section.css">
-    <link rel="stylesheet" href="/css/about-section.css">
-    <link rel="stylesheet" href="/css/service-section.css">
-    <link rel="stylesheet" href="/css/skill-section.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/sections_css/navbar.css">
+    <link rel="stylesheet" href="/css/sections_css/home-section.css">
+    <link rel="stylesheet" href="/css/sections_css/about-section.css">
+    <link rel="stylesheet" href="/css/sections_css/service-section.css">
+    <link rel="stylesheet" href="/css/sections_css/skill-section.css">
+    <link rel="stylesheet" href="/css/sections_css/portfolio-section.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -112,7 +114,7 @@
                Nihil, sapiente sit! Facere enim commodi ad saepe? 
     Dolorum eum odio praesentium optio culpa nemo? Quam tempora maxime doloremque quis laborum sapiente.</p>
 </div>
-<div class="row">
+<div class="row card-container">
   <div class="col-lg-3 col-md-6 col-sm-12">
     <div class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto " style="width: 18rem;">
       <i class="fa-solid fa-palette service-icon"></i>
@@ -156,7 +158,8 @@
 <div class="row">
   <div class="col-lg-3 col-md-6 col-sm-12">
     <div class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto" style="width: 18rem;">
-      <i class="fa-solid fa-chart-line-up service-icon"></i>
+      <i class="fa-solid fa-chart-line service-icon"></i>
+      
       <div class="card-body">
         <h5 class="card-title">SEO Optimisation</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -187,7 +190,7 @@
   <div class="col-lg-3 col-md-6 col-sm-12">
     <div class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">Animation</h5>
+        <h5 class="card-title">3D Animation</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
        
       </div>
@@ -331,6 +334,136 @@
       </div>
       
       <!-- PORTFOLIO -->
+      <div class="container-fluid portfolio-section">
+        <div class="row">
+          <h1 class="text-center page-heading mb-3 mt-3">Portfolio</h1>
+        </div>
+        <div class="row projects-highlight-section">
+          <div class="col-lg-4 col-md-6 col-sm-12 project-sec-col">
+            <div class="card ms-auto me-auto" style="width: 18rem;">
+              <i class="fa-solid fa-briefcase highlight-icon"></i>
+              <div class="card-body">
+                <h2 class="text-center mb-lg-3">10+</h2>
+                <h5 class="card-title text-center">Projects Done</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 project-sec-col">
+            <div class="card ms-auto me-auto" style="width: 18rem;">
+              <i class="fa-solid fa-face-smile highlight-icon"></i>
+              <div class="card-body">
+                <h2 class="text-center mb-lg-3">20+</h2>
+                <h5 class="card-title text-center">Happy Customers</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 project-sec-col">
+            <div class="card ms-auto me-auto" style="width: 18rem;">
+              <i class="fa-solid fa-award highlight-icon"></i>
+              <div class="card-body">
+                 <h2 class="text-center mb-lg-3">0</h2>
+                <h5 class="card-title text-center">Award Winning</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row nav-row">
+          <h3 class="text-center sub-heading mb-2 mt-2">Projects</h3>
+        </div>
+        <div class="row nav-section">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">ALL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">APPLICATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">UI/UX DESIGN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ANIMATION</a>
+            </li>
+          </ul>
+        </div>
+        <div class="row project-card">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn view-detail-btn">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn view-detail-btn">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn view-detail-btn">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn view-detail-btn">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn view-detail-btn">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn view-detail-btn">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn view-detail-btn">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-2" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn view-detail-btn">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+      </div>
 
       <!-- CONTACT -->
 
@@ -347,5 +480,6 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/jquery-3.6.1.js"></script>
 <script src="/js/all.min.js"></script>
+<script src="/js/all.js"></script>
 </body>
 </html>

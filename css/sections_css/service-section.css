@@ -30,11 +30,14 @@ styling services section
     bottom: -25%;
     background: var(--primary-color);   
     }
+    .container-fluid .card-container{
+        /* background-color: var(--secondary-color); */
+    }
 .container-fluid .row .card{
+    
     height: 210px!important;
     width: 300px!important;
-    /* background-color: rgb(81, 77, 77); */
-    /* background-color: rgb(11, 10, 10); */
+     background-color: var(--secondary-color);
 }
 .container-fluid .row .card .service-icon{
     margin: 0 auto;

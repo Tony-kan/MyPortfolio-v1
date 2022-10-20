@@ -1,0 +1,126 @@
+.portfolio-section .row{
+    /* border: 2px solid red; */
+}
+
+.portfolio-section .projects-highlight-section{
+    background-color: var(--secondary-color);
+    height: 34vh;
+}
+.portfolio-section .projects-highlight-section .card{
+    border:none;
+}
+
+.portfolio-section .projects-highlight-section .card .highlight-icon{
+    height: 50px;
+    margin: 40px auto 10px auto;
+    color: var(--action-color);
+
+}
+.portfolio-section .nav-section{
+    width: 70%;
+    margin: 0 auto;
+}
+.portfolio-section .nav-section .navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: var(--secondary-color);
+
+}
+.portfolio-section .nav-section .navbar-nav .nav-item a{ 
+ color: black;
+ border-bottom: 5px solid var(--secondary-color);
+}
+.portfolio-section .nav-section .navbar-nav .nav-item a:hover{ 
+    border-bottom: 5px solid var(--action-color);
+   }
+   .portfolio-section .nav-section .navbar-nav .nav-item a:active{ 
+    border-bottom: 5px solid var(--action-color);
+   }
+   .portfolio-section .nav-section .navbar-nav .nav-item .active{ 
+    border-bottom: 5px solid var(--action-color);
+   }
+   .portfolio-section .project-card{
+    background-color: var(--secondary-color);
+   }
+   .portfolio-section .project-card .card{ 
+    margin: 0 auto; 
+    height: 200px!important;
+    width: 290px!important;
+    /* border: 5px solid blue; */
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+   .portfolio-section .project-card .card .card-body .view-detail-btn{ 
+    /* border: 2px solid red!important;  */
+    border-radius: 10px;
+    height: 40px;
+    width: 160px;
+    border: 2px solid;
+    background-color: var(--action-color);
+    color: var(--primary-color);
+}
+
+
+
+
+/* MOBILE VIEW */
+@media(max-width:767px) {
+    .portfolio-section .projects-highlight-section .card{
+        /* border:none; */
+        background-color: var(--primary-color);
+    }
+    .portfolio-section .projects-highlight-section{
+        height: 81vh!important;
+    }
+    .portfolio-section .projects-highlight-section .project-sec-col{
+        height: 27vh;
+    }
+    
+    .portfolio-section .projects-highlight-section .card .highlight-icon{
+        height: 50px;
+        margin: 20px auto 10px auto;
+    }
+    .portfolio-section .nav-section{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .portfolio-section .project-card .col-lg-3{ 
+        margin: 0px auto; 
+        width: 200px!important;
+    }
+    .portfolio-section .project-card .card{ 
+        margin: 0px auto; 
+        height: 200px!important;
+        width: 180px!important;
+        gap: 20px;
+    }
+
+}
+
+
+/* 
+
+TABLET VIEW 
+
+*/
+@media(max-width:991px){
+
+    .portfolio-section .projects-highlight-section .card{
+
+        background-color: var(--primary-color);
+    }
+    .portfolio-section .projects-highlight-section{
+        height: 32vh;
+    }
+    .portfolio-section .projects-highlight-section .project-sec-col{
+        height: 16vh;
+    }
+
+}

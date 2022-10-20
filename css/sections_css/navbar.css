@@ -1,12 +1,13 @@
 :root{
     --primary-color:white;
-    /* --secondary-color: */
+    --secondary-color:#e9ecef;
     --action-color:rgb(128,131,255);
     --gray-100:#f8f9fa;
 }
 
 .navbar{
     height: 18vh;
+    background-color: var(--secondary-color)!important;
 }
 
 .navbar .container-fluid  .navbar-brand{
@@ -25,7 +26,7 @@
 }
 .navbar ul li a{
     letter-spacing: 2px;
-    border-bottom: 3px solid var(--gray-100);
+    border-bottom: 3px solid var(--secondary-color);
     font-weight: 470;
     color: black!important;
 }
