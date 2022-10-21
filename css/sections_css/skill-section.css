@@ -1,23 +1,28 @@
-.skill-section .row{
+.skill-section .row {
     /* border: 2px solid red; */
 }
-.skill-section .row div{
+
+.skill-section .row div {
     /* border: 2px solid red; */
 }
-.skill-section .text-section{
+.skill-section .row .page-heading{
+    color: var(--black-100);
+}
+
+.skill-section .text-section {
     display: flex;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
     /* border: 5px solid green; */
     gap: 5px;
-    height: 60vh!important;
+    height: 60vh !important;
     margin-bottom: 60px;
-   
 }
-/* .skill-section .text-section h2{ 
-border: 5px solid;
-} */
-.skill-section .row  button{  
+
+.skill-section .text-section h2,p{ 
+    color: var(--black-100);
+}
+.skill-section .row button {
     /* margin: 0 auto; */
     margin-left: auto;
     margin-right: auto;
@@ -25,35 +30,46 @@ border: 5px solid;
     height: 60px;
     width: 160px;
     background-color: var(--action-color);
-    color: var(--primary-color);
+    color: var(--black-btn-color);
 }
-.skill-section .row .bar{
+
+.skill-section .row button:hover {
+    background-color: var(--black-btn-color);
+    color: var(--action-color);
+    border: 2px solid var(--action-color);
+}
+
+
+.skill-section .row .bar {
     width: 50%;
     height: 60px;
 }
-.skill-section .row .bar .info{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+.skill-section .row .bar .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.skill-section .row .bar .skill-bar{
+.skill-section .row .bar .info span{
+    color: var(--black-100);
+}
+
+.skill-section .row .bar .skill-bar {
     /* height: 200px!important; */
-    background-color: var(--action-color)!important;
+    background-color: var(--action-color) !important;
 
 }
 
 /* MOBILE VIEW */
 @media(max-width:767px) {
-    .skill-section .text-section{
+    .skill-section .text-section {
         display: flex;
         justify-content: center;
-        flex-direction:column;
+        flex-direction: column;
         /* border: 5px solid green; */
         gap: 5px;
-        height: 30vh!important;
+        height: 30vh !important;
         margin-bottom: 60px;
-       
+
     }
 }
-
-

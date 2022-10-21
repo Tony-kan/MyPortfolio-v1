@@ -4,11 +4,12 @@ styling services section
 
 
 */
-.service-section  .row  .page-heading{
+.service-section .row .page-heading {
     position: relative;
+    color: var(--black-100);
 }
 
-.service-section  .row  .page-heading::before{
+.service-section .row .page-heading::before {
     position: absolute;
     content: "";
     width: 190px;
@@ -17,33 +18,40 @@ styling services section
     bottom: -25%;
     transform: translateX(15%);
     background: var(--action-color);
-    }
-    .service-section  .row  .page-heading::after{
+}
+
+.service-section .row .page-heading::after {
     position: absolute;
     content: "i offer";
     font-size: 20px;
     width: 60px;
     height: 15px;
-    padding-top:auto;
-    padding-bottom:auto;
+    padding-top: auto;
+    padding-bottom: auto;
     right: 47%;
     bottom: -25%;
-    background: var(--primary-color);   
-    }
-    .container-fluid .card-container{
-        /* background-color: var(--secondary-color); */
-    }
-.container-fluid .row .card{
-    
-    height: 210px!important;
-    width: 300px!important;
-     background-color: var(--secondary-color);
+    background: var(--primary-color);
 }
-.container-fluid .row .card .service-icon{
+
+.container-fluid .card-container {
+    /* background-color: var(--secondary-color); */
+}
+
+.container-fluid .row .card {
+
+    height: 210px !important;
+    width: 300px !important;
+    background-color: var(--secondary-color);
+}
+.container-fluid .row .card .card-title{
+    color: var(--black-100);
+}
+
+.container-fluid .row .card .service-icon {
     margin: 0 auto;
     margin-top: 5px;
-    width: 60px!important;
-    height: 60px!important;
+    width: 60px !important;
+    height: 60px !important;
     color: var(--action-color);
     /* background-color: var(--action-color); */
 }
@@ -54,14 +62,14 @@ styling services section
 /* MOBILE VIEW */
 @media(max-width:767px) {
 
-    .service-section  .row  .page-heading::before{
+    .service-section .row .page-heading::before {
         width: 140px;
         height: 10px;
         left: 40%;
         bottom: -25%;
         transform: translateX(-30%);
-        }
-    
+    }
+
 }
 
 
@@ -70,6 +78,4 @@ styling services section
 TABLET VIEW 
 
 */
-@media(max-width:991px){
-    
-}
+@media(max-width:991px) {}

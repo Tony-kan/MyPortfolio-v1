@@ -5,31 +5,36 @@ styling a homepage
 
 
 */
-.container-fluid .row .col-lg-4{
+.container-fluid .row .col-lg-4 {
     /* border: 2px solid red; */
-    height:82vh;
+    height: 82vh;
 }
-.container-fluid .row .name-section h4{
+
+.container-fluid .row .name-section h4 {
     display: flex;
     justify-content: center;
     margin-top: 40vh;
+    color: var(--black-100);
 }
-.container-fluid .row .name-section h2{
+
+.container-fluid .row .name-section h2 {
     display: flex;
     justify-content: center;
     color: var(--action-color);
     font-size: 40px;
 }
-.container-fluid .row .img-section img{
+
+.container-fluid .row .img-section img {
     display: flex;
     justify-content: center;
     margin-top: 20vh;
     height: 340px;
     width: 300px;
-   margin-left: auto;
-   margin-right: auto;
-   position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
+
 /* .profile-img::before{
     position: absolute;
     content:""!important;
@@ -73,13 +78,15 @@ styling a homepage
     left: 450px;
 } */
 
-.container-fluid .row .title-section h4{
+.container-fluid .row .title-section h4 {
     display: flex;
     justify-content: center;
     margin-top: 20vh;
+    color: var(--black-100);
 
 }
-.container-fluid .row .title-section h1{
+
+.container-fluid .row .title-section h1 {
     display: flex;
     justify-content: center;
     color: var(--action-color);
@@ -89,12 +96,13 @@ styling a homepage
 
 /* MOBILE VIEW */
 @media(max-width:767px) {
-     /* 
+
+    /* 
 
     Hero section mobile view styling
 
     */
-    .container-fluid .row .img-section img{
+    .container-fluid .row .img-section img {
         display: flex;
         justify-content: center;
         margin-top: 4vh;
@@ -103,20 +111,25 @@ styling a homepage
         margin-left: auto;
         margin-right: auto;
     }
-   
-    .container-fluid .row .col-lg-4{
+
+    .container-fluid .row .col-lg-4 {
         /* border: 2px solid red; */
-        height:40vh;
+        height: 40vh;
     }
-    .container-fluid .row .name-section h4{
+
+    .container-fluid .row .name-section h4 {
         margin-top: 20vh;
+        color: var(--black-100);
     }
-    .container-fluid .row .title-section h4{
+
+    .container-fluid .row .title-section h4 {
         display: flex;
         justify-content: center;
         margin-top: 10vh;
-    
+        color: var(--black-100);
+
     }
+
     /* .container-fluid .row .img-section::before{
         top: 280px;
         right: 125px;
@@ -142,6 +155,4 @@ styling a homepage
 TABLET VIEW 
 
 */
-@media(max-width:991px){
-
-}
+@media(max-width:991px) {}
