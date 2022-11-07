@@ -15,10 +15,20 @@
     <link rel="stylesheet" href="/css/sections_css/skill-section.css" />
     <link rel="stylesheet" href="/css/sections_css/portfolio-section.css" />
     <link rel="stylesheet" href="/css/sections_css/contact-section.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
-  <body >
+  <body data-bs-spy="scroll" data-bs-target="#navbar-scrollable">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <nav
+      class="navbar navbar-expand-lg sticky-top navbar-light bg-light"
+      id="navbar-scrollable"
+    >
       <div class="container-fluid">
         <a class="navbar-brand ms-4" href="#">PORT<span>FOLIO</span> </a>
         <button
@@ -37,23 +47,41 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
             <li class="nav-item ms-lg-5">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              <a
+                class="nav-link active"
+                id="home-sect-link"
+                href="#home-section"
+                >HOME</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about-section">ABOUT</a>
+              <a class="nav-link" id="about-sect-link" href="#about-section"
+                >ABOUT</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#service-section">SERVICES</a>
+              <a class="nav-link" id="service-sect-link" href="#service-section"
+                >SERVICES</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skill-section">SKILLS</a>
+              <a class="nav-link" id="skill-sect-link" href="#skill-section"
+                >SKILLS</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio-section">PORTFOLIO</a>
+              <a
+                class="nav-link"
+                id="portfolio-sect-link"
+                href="#portfolio-section"
+                >PORTFOLIO</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact-section">CONTACTS</a>
+              <a class="nav-link" id="contact-sect-link" href="#contact-section"
+                >CONTACTS</a
+              >
             </li>
           </ul>
         </div>
@@ -64,27 +92,34 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 theme-row">
-          <i class="fas theme-icon"></i>
+          <!-- <i class="bi bi-brightness-high-fill"></i> -->
+          <i class="fas fa-moon" id="theme-icon"></i>
         </div>
       </div>
     </div>
     <!-- Hero section -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="home-section">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12 name-section">
           <h4>Hello , my name is</h4>
-          <h2>Tony Kanyamuka</h2>
+          <h2
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+          >
+            Tony Kanyamuka
+          </h2>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 img-section">
           <img
             src="/assets/imgs/profile-1.jpeg"
             alt="profile-pic"
-            class="profile-img"
+            class="profile-img img-fluid"
           />
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 title-section">
           <h4>I'm a</h4>
-          <h1 class="typing">Developer |</h1>
+          <h1 class="intro-typing">Developer</h1>
         </div>
       </div>
     </div>
@@ -97,11 +132,13 @@
           <img
             src="/assets/imgs/profile-1.jpeg"
             alt="profile-pic"
-            class="profile-img"
+            class="profile-img img-fluid"
           />
         </div>
         <div class="col-lg-8 info-section">
-          <h2>I am Tony and i'm a <span class="typing">Programmer|</span></h2>
+          <h2>
+            I am Tony and i'm a <span class="info-typing">Programmer|</span>
+          </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi
             nihil quisquam nesciunt exercitationem placeat dolores sit porro
@@ -114,6 +151,7 @@
           </div>
         </div>
       </div>
+      <div class="row experience-section visually-hidden">jjnnd</div>
     </div>
 
     <!-- SERVICE -->
@@ -124,6 +162,9 @@
       <div class="row card-container mt-2">
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
             class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto"
             style="width: 18rem"
           >
@@ -139,6 +180,9 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
             class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto"
             style="width: 18rem"
           >
@@ -154,6 +198,9 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
             class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto"
             style="width: 18rem"
           >
@@ -169,6 +216,9 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
             class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto"
             style="width: 18rem"
           >
@@ -186,6 +236,9 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
             class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto"
             style="width: 18rem"
           >
@@ -202,6 +255,9 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
             class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto"
             style="width: 18rem"
           >
@@ -217,6 +273,9 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
             class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto"
             style="width: 18rem"
           >
@@ -232,6 +291,9 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
             class="card mb-md-5 mb-5 mb-lg-3 ms-auto me-auto"
             style="width: 18rem"
           >
@@ -253,7 +315,12 @@
         <h1 class="text-center page-heading mb-4">SKILLS</h1>
       </div>
       <div class="row">
-        <div class="col-lg-4 text-section">
+        <div
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1000"
+          class="col-lg-4 text-section"
+        >
           <h2 class="sub-heading mt-1 text-center">My Creative skills</h2>
           <p class="text-center">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quasi
@@ -263,7 +330,12 @@
           </p>
           <button class="btn mt-3">Read More</button>
         </div>
-        <div class="col-lg-8">
+        <div
+          data-aos="fade-left"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1000"
+          class="col-lg-8"
+        >
           <div class="row">
             <!-- <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
@@ -496,29 +568,49 @@
       </div>
       <div class="row projects-highlight-section">
         <div class="col-lg-4 col-md-6 col-sm-12 project-sec-col">
-          <div class="card ms-auto me-auto" style="width: 18rem">
+          <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            class="card ms-auto me-auto"
+            style="width: 18rem"
+          >
             <i class="fa-solid fa-briefcase highlight-icon"></i>
             <div class="card-body">
-              <h2 class="text-center mb-lg-3">10+</h2>
-              <h5 class="card-title text-center">Projects Done</h5>
+              <h2 class="text-center mb-lg-3 mb-md-3 mb-3">10+</h2>
+              <h5 class="card-title text-center">Projects completed</h5>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 project-sec-col">
-          <div class="card ms-auto me-auto" style="width: 18rem">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="250"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            class="card ms-auto me-auto"
+            style="width: 18rem"
+          >
             <i class="fa-solid fa-face-smile highlight-icon"></i>
             <div class="card-body">
-              <h2 class="text-center mb-lg-3">20+</h2>
-              <h5 class="card-title text-center">Happy Customers</h5>
+              <h2 class="text-center mb-lg-3 mb-md-3 mb-3">20+</h2>
+              <h5 class="card-title text-center">Satisfied Customers</h5>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 project-sec-col">
-          <div class="card ms-auto me-auto" style="width: 18rem">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="450"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            class="card ms-auto me-auto"
+            style="width: 18rem"
+          >
             <i class="fa-solid fa-award highlight-icon"></i>
             <div class="card-body">
-              <h2 class="text-center mb-lg-3">0</h2>
-              <h5 class="card-title text-center">Award Winning</h5>
+              <h2 class="text-center mb-lg-3 mb-md-3">0</h2>
+              <h5 class="card-title text-center">Years of experience</h5>
             </div>
           </div>
         </div>
@@ -639,52 +731,52 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-5 icon-sect">
+            <div class="col-lg-5 col-md-6 icon-sect">
               <i class="fa-solid fa-phone contact-icon"></i>
               <h4>Phone</h4>
               <span>:</span>
             </div>
-            <div class="col-lg-7 info-sect">
+            <div class="col-lg-7 col-md-6 info-sect">
               <h5>+256996008328</h5>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-5 icon-sect">
+            <div class="col-lg-5 col-md-6 icon-sect">
               <i class="fa-solid fa-envelope contact-icon"></i>
               <h4>Email</h4>
               <span>:</span>
             </div>
-            <div class="col-lg-7 info-sect">
+            <div class="col-lg-7 col-md-6 info-sect">
               <h5>tonykanyamuka@gmail.com</h5>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-5 icon-sect">
+            <div class="col-lg-5 col-md-6 icon-sect">
               <i class="fa-solid fa-globe contact-icon"></i>
               <h4>Website</h4>
               <span>:</span>
             </div>
-            <div class="col-lg-7 info-sect">
+            <div class="col-lg-7 col-md-6 info-sect">
               <h5>www.Visse.com</h5>
             </div>
           </div>
           <div class="row mb-4">
-            <div class="col-lg-5 icon-sect">
+            <div class="col-lg-5 col-md-6 icon-sect">
               <i class="fa-solid fa-location-dot contact-icon"></i>
               <h4>Address</h4>
               <span>:</span>
             </div>
-            <div class="col-lg-7 info-sect">
+            <div class="col-lg-7 col-md-6 info-sect">
               <h5>Unima</h5>
             </div>
           </div>
         </div>
         <div class="col-lg-7 contact-right-sect">
-          <div class="row">
+          <div class="row mt-4">
             <h4 class="text-center">Email me</h4>
           </div>
           <div class="row mb-2">
-            <div class="col-lg-6">
+            <div class="col-lg-6 mt-4 mt-md-5">
               <input
                 type="text"
                 class="form-control"
@@ -693,7 +785,7 @@
                 id="inputFullName"
               />
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 mt-2 mt-md-5">
               <input
                 type="email"
                 class="form-control"
@@ -704,7 +796,7 @@
             </div>
           </div>
           <div class="row mb-2">
-            <div class="col-lg-12">
+            <div class="col-lg-12 mt-2 mt-md-5">
               <input
                 type="text"
                 class="form-control"
@@ -714,7 +806,7 @@
               />
             </div>
           </div>
-          <div class="row mb-2">
+          <div class="row mb-2 mt-4 mt-md-5">
             <textarea
               name="inputMessage"
               placeholder="Message"
@@ -723,8 +815,8 @@
               rows="10"
             ></textarea>
           </div>
-          <div class="row">
-            <button type="submit" class="btn submit-btn">Submit</button>
+          <div class="row mt-md-3">
+            <button type="submit" class="btn submit-btn mb-2">Submit</button>
           </div>
         </div>
       </div>
@@ -733,17 +825,39 @@
     <!-- fontawes -->
     <!-- <i class="fa-solid fa-sun-bright"></i>
 <i class="fa-duotone fa-moon"></i>
-<i class="fa fa-sun-o" aria-hidden="true"></i> -->
-    <!-- <i class="fas fa-moon" ></i>
+<i class="fa fa-sun-o" aria-hidden="true"></i>
+    <i class="fas fa-moon" ></i>
 <i class="fas fa-sun" ></i> -->
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/jquery-3.6.1.js"></script>
-    <script src="/js/all.min.js"></script>
+
     <script src="/js/all.js"></script>
+    <script defer src="/js/nav.js"></script> -->
     <!-- <script type="module" defer src="/js/index.js"></script> -->
-    <script defer src="/js/theme-switcher.js"></script>
+    <!-- <script defer src="/js/theme-switcher.js"></script>
+    <script src="/js/typewrite.js"></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script> -->
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js.map"></script> -->
+    <script src="/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/js/typewrite.js"></script>
+    <!-- <script defer src="/js/theme-switcher.js"></script> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

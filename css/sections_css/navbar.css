@@ -3,18 +3,20 @@
     --secondary-color: #e9ecef;
     --action-color: rgb(128, 131, 255);
     --gray-100: #f8f9fa;
-    --black-100:black;
-    --black-btn-color:white;
+    --black-100: black;
+    --black-btn-color: white;
 }
-body.dark{
+
+body.dark {
     --primary-color: black;
     --secondary-color: #585b5f;
     --action-color: rgb(128, 131, 255);
     --gray-100: #f8f9fa;
-    --black-100:white;
-    --black-btn-color:white;
+    --black-100: white;
+    --black-btn-color: white;
 }
-body{
+
+body {
     background-color: var(--primary-color);
 }
 
@@ -44,17 +46,19 @@ body{
     border-bottom: 3px solid var(--secondary-color);
     font-weight: 470;
     color: var(--black-100) !important;
+    transition: all 0.3s ease;
 }
 
 .navbar ul li a:hover {
     border-bottom: 3px solid var(--action-color);
+    transition: all 0.6s ease;
 }
 
-.navbar ul li a:active {
+/* .navbar ul li a:active {
     background-color: var(--action-color) !important;
     color: var(--primary-color) !important;
 
-}
+} */
 
 .navbar ul li .active {
     background-color: var(--action-color) !important;
@@ -85,10 +89,23 @@ body{
 .container-fluid .row .theme-row {
     display: flex;
     justify-content: flex-end;
-    
+    background-color: aquamarine;
+
 }
 
-.container-fluid .row .theme-row .theme-icon {
+/* .container-fluid .row .theme-row i{
+    position: fixed;
+    margin-right: 20px;
+    margin-top: 60px;
+    height: 40px;
+    width: 40px;
+    color: var(--black-color)!important;
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+    z-index: 999;
+    border: 2px solid red;
+} */
+.container-fluid .row .theme-row #theme-icon {
     position: fixed;
     margin-right: 20px;
     margin-top: 60px;
@@ -102,7 +119,8 @@ body{
 
 
 /* MOBILE VIEW */
-@media(max-width:767px) {
+/* @media (min-width: 576px) { */
+@media(max-width: 767.98px) {
     .navbar ul {
         gap: 5px;
         width: 80%;
@@ -123,7 +141,9 @@ body{
 TABLET VIEW 
 
 */
-@media(max-width:991px) {
+
+/* @media(min-width: 991.98px) { */
+@media(max-width: 991.98px) {
     .navbar ul {
 
         width: 90%;

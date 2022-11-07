@@ -8,7 +8,9 @@ styling a homepage
 .container-fluid .row .col-lg-4 {
     /* border: 2px solid red; */
     height: 82vh;
+    background-color: var(--primary-color);
 }
+
 
 .container-fluid .row .name-section h4 {
     display: flex;
@@ -24,15 +26,25 @@ styling a homepage
     font-size: 40px;
 }
 
-.container-fluid .row .img-section img {
+.container-fluid .row .img-section {
+    /* border: 2px solid green; */
     display: flex;
+    justify-content: center;
+}
+
+.container-fluid .row .img-section img {
+    /* border: 2px solid green; */
+    max-height: 96%;
+    /* object-fit: cover; */
+
+    /* display: flex;
     justify-content: center;
     margin-top: 20vh;
     height: 340px;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    position: relative; */
 }
 
 /* .profile-img::before{
@@ -90,26 +102,29 @@ styling a homepage
     display: flex;
     justify-content: center;
     color: var(--action-color);
-    font-size: 60px;
+    font-size: 50px;
 }
 
 
 /* MOBILE VIEW */
-@media(max-width:767px) {
+@media(max-width: 767.98px) {
 
     /* 
 
     Hero section mobile view styling
 
     */
+    /* .container-fluid .row .img-section,.name-section,.title-section{
+        height: 100vh!important;
+    } */
     .container-fluid .row .img-section img {
-        display: flex;
+        /* display: flex;
         justify-content: center;
         margin-top: 4vh;
         height: 250px;
         width: 210px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; */
     }
 
     .container-fluid .row .col-lg-4 {
@@ -155,4 +170,40 @@ styling a homepage
 TABLET VIEW 
 
 */
-@media(max-width:991px) {}
+@media(max-width: 991.98px) {
+
+    .container-fluid .row .img-section,
+    .name-section,
+    .title-section {
+        height: 28vh;
+        /* border: 2px solid red; */
+    }
+
+    .container-fluid .row .img-section img {
+        /* display: flex;
+        justify-content: center; */
+        margin-top: 4vh;
+        /* height: 250px;
+        width: 210px; */
+        /* width: 100%; */
+        max-height: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-fluid .row .col-lg-4 {
+        /* border: 2px solid red; */
+        height: 40vh;
+    }
+
+    .container-fluid .row .name-section h4 {
+        margin-top: 14vh;
+        color: var(--black-100);
+    }
+
+    .container-fluid .row .title-section h4 {
+        margin-top: 5vh;
+        color: var(--black-100);
+    }
+
+}

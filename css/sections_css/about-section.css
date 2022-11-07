@@ -4,31 +4,48 @@ styling about section
 
 
 */
+.about-section {
+  background-color: var(--primary-color);
+}
 
 .about-section .pic-section {
   height: 70vh !important;
+
+  /* border: 2px solid blue; */
 }
 
 .about-section .row .pic-section .profile-img {
   display: flex;
   justify-content: center;
   margin-top: 3vh;
-  height: 410px;
-  width: 400px;
+
+  max-height: 96%;
+
   margin-left: auto;
   margin-right: auto;
+
+  /* max-height: 410px; */
+  /* max-width: 100%; */
+  /* border: 3px solid; */
+  /* max-width: 420px; */
+  /* min-height: 310px!important; */
+  /* object-fit: cover; */
+  /* min-height: 200px; */
 }
+
 .about-section .row .info-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
 }
+
 .about-section .row .page-heading {
   text-align: center;
   position: relative;
   color: var(--black-100);
 }
+
 .about-section .row .page-heading::before {
   position: absolute;
   content: "";
@@ -39,6 +56,7 @@ styling about section
   transform: translateX(30%);
   background: var(--action-color);
 }
+
 .about-section .row .page-heading::after {
   position: absolute;
   content: "me";
@@ -51,17 +69,22 @@ styling about section
   bottom: -25%;
   background: var(--primary-color);
 }
-.about-section .row .info-section h2,p{
+
+.about-section .row .info-section h2,
+p {
   color: var(--black-100);
 }
+
 .about-section .row .info-section span {
   color: var(--action-color);
 }
+
 .about-section .row .info-section .btn-section {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
+
 .about-section .row .info-section .btn-section button {
   border-radius: 20px;
   height: 60px;
@@ -71,14 +94,22 @@ styling about section
   color: var(--black-btn-color);
   margin: 0 100px;
 }
+
 .about-section .row .info-section .btn-section button:hover {
   background-color: var(--black-btn-color);
   color: var(--action-color);
   border: 2px solid var(--action-color);
 }
 
+.experience-section {
+  border: 2px solid purple;
+  height: 60vh;
+
+}
+
 /* MOBILE VIEW */
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
+
   /* 
     
     about section mobile view styling 
@@ -89,25 +120,32 @@ styling about section
     height: 250px;
     width: 210px;
   }
+
   .about-section .row .info-section {
     /* display: flex;
         justify-content: center;
         flex-direction: row; */
     margin-top: 60px;
   }
+
   .about-section .row .info-section .btn-section {
     display: flex;
     justify-content: center;
     flex-direction: row;
   }
+
   .about-section .row .info-section .btn-section button {
     margin: 0 10px;
     width: 140px;
     height: 50px;
   }
+
   .about-section .pic-section {
     height: 40vh !important;
+    /* border: 2px solid green; */
+
   }
+
   .about-section .row .page-heading::before {
     width: 140px;
     height: 10px;
@@ -115,6 +153,7 @@ styling about section
     bottom: -25%;
     transform: translateX(-30%);
   }
+
   /* .about-section  .row  .page-heading::after{
             position: absolute;
             content: "me";
@@ -134,12 +173,21 @@ styling about section
 TABLET VIEW 
 
 */
-@media (max-width: 991px) {
-  /* .about-section .row .pic-section .profile-img{ 
-        margin-top: 4vh;
-        height: 250px;
-        width: 210px;
-    } */
+@media (max-width: 991.98px) {
+  .about-section .row .pic-section {
+    height: 41vh !important;
+    /* border: 2px solid red; */
+  }
+
+  .about-section .row .pic-section .profile-img {
+    margin-top: 4vh;
+    height: fit-content;
+    height: 200px;
+    width: 250px;
+    /* height: 250px;
+        width: 210px; */
+  }
+
   /* .about-section .row .info-section{
         display: flex;
         justify-content: center;
@@ -162,4 +210,3 @@ TABLET VIEW
             height: 40vh!important;
         } */
 }
-

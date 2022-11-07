@@ -4,6 +4,10 @@ styling services section
 
 
 */
+.service-section {
+    background-color: var(--primary-color);
+}
+
 .service-section .row .page-heading {
     position: relative;
     color: var(--black-100);
@@ -43,7 +47,8 @@ styling services section
     width: 300px !important;
     background-color: var(--secondary-color);
 }
-.container-fluid .row .card .card-title{
+
+.container-fluid .row .card .card-title {
     color: var(--black-100);
 }
 
@@ -60,7 +65,7 @@ styling services section
 
 
 /* MOBILE VIEW */
-@media(max-width:767px) {
+@media(max-width:767.98px) {
 
     .service-section .row .page-heading::before {
         width: 140px;
@@ -78,4 +83,4 @@ styling services section
 TABLET VIEW 
 
 */
-@media(max-width:991px) {}
+@media(max-width: 991.98px) {}
