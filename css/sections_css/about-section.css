@@ -6,6 +6,7 @@ styling about section
 */
 .about-section {
   background-color: var(--primary-color);
+  padding-top: 7rem !important;
 }
 
 .about-section .pic-section {
@@ -93,6 +94,7 @@ p {
   background-color: var(--action-color);
   color: var(--black-btn-color);
   margin: 0 100px;
+  letter-spacing: 2px;
 }
 
 .about-section .row .info-section .btn-section button:hover {

@@ -1,6 +1,39 @@
 const dayNight = document.querySelector(".theme-row");
 const themeIcon =dayNight.querySelector("#theme-icon");
 
+window.addEventListener("load",()=>{
+    
+    themeIcon.classList.add("fa-sun");
+    console.log(themeIcon);
+    // if(document.body.classList.contains("dark")){
+    //     themeIcon.classList.replace("fa-moon","fa-sun")
+
+    // }
+});
+// dayNight.addEventListener("click",()=>{
+//      if(document.body.classList.contains("dark")){
+//         themeIcon.classList.replace("fa-moon","fa-sun");
+//         body.classList.add("dark");
+//     }
+//     else{
+//         themeIcon.classList.add("fa-moon");
+//         body.classList.remove("dark");
+//     }
+// })
+dayNight.addEventListener("click",()=>{
+    if(themeIcon.classList.contains("fa-moon")){
+        themeIcon.classList.replace("fa-moon","fa-sun");
+        document.body.classList.add("dark");
+        console.log(themeIcon);
+        // console.log(body.classList);
+    }
+    if (themeIcon.classList.contains("fa-sun")){
+        themeIcon.classList.replace("fa-sun","fa-moon");
+        document.body.classList.remove("dark");
+        console.log(themeIcon);
+    }
+})
+
 // document.body.classList.add("dark");
 
 // window.addEventListener("load",()=>{
@@ -34,70 +67,3 @@ const themeIcon =dayNight.querySelector("#theme-icon");
 
 
 
-// window.addEventListener("load",()=>{
-//     if(document.body.classlist.contains("dark")){
-//         themeIcon.classList.add("fa-sun");
-//      console.log(themeIcon);
-//     }
-//     else{
-//         themeIcon.classList.add("fa-moon");
-//         console.log(themeIcon);
-    // }
-    // themeIcon.classList.add("fa-moon");
-
-   
-// });
-
-// dayNight.addEventListener("click",()=>{
-    // document.body.classList.add("dark");
-    // themeIcon.classList.add("fa-sun");
-    //     themeIcon.classList.remove("fa-sun");
-    // if(themeIcon.classList.contains("fa-sun")){
-    //     themeIcon.classList.add("fa-moon");
-    //     themeIcon.classList.remove("fa-sun");
-    // }
-    // else{
-    //     themeIcon.classList.add("fa-sun");
-    //     themeIcon.classList.remove("fa-moon");
-    // }
-    // if(themeIcon.classList.contains("fa-sun")){
-        
-    // }
-    // else if(themeIcon.classList.contains("fa-moon")){
-       
-    // }
-   
-    // themeIcon.classList.toggle("fa-moon");
-    // themeIcon.classList.toggle("fa-sun");
-    //  if(document.body.classlist.contains("dark")){
-
-    //     themeIcon.classList.add("fa-sun");
-    //     themeIcon.classList.remove("fa-moon");
-    //     document.body.classList.toggle("dark");
-    //  console.log(themeIcon);
-    // }
-        //  themeIcon.classList.add("fa-sun");
-        
-
-    
-    
-// });
-
-
-
-//     // if(document.body.classList.contains("dark")){
-   
-//     //       themeIcon.classList.add("fa-sun");
-//     //       console.log(themeIcon);
-//     // }
-// //     if(!document.body.classList.contains("dark")){
-   
-// //         themeIcon.classList.add("fa-moon");
-// //         console.log(themeIcon);
-// //   }
-//     // else{
-//     //     themeIcon.classList.add("fa-moon");
-//     // }
-
-
-// })

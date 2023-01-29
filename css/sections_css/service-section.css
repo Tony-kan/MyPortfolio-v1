@@ -6,6 +6,7 @@ styling services section
 */
 .service-section {
     background-color: var(--primary-color);
+    padding-top: 7rem !important;
 }
 
 .service-section .row .page-heading {

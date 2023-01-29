@@ -1,5 +1,6 @@
 .portfolio-section {
     background-color: var(--primary-color);
+    padding-top: 7rem !important;
 }
 
 .portfolio-section .row {
@@ -13,8 +14,9 @@
 
 .portfolio-section .projects-highlight-section {
     background-color: var(--secondary-color);
-    height: 45vh;
+    min-height: 10vh !important;
     /* border: 2px solid green; */
+
 }
 
 .portfolio-section .projects-highlight-section .card {
@@ -23,7 +25,7 @@
 }
 
 .portfolio-section .projects-highlight-section .card .highlight-icon {
-    height: 50px;
+    min-height: 10px;
     margin: 40px auto 10px auto;
     color: var(--action-color);
 
@@ -90,7 +92,7 @@ h5 {
 }
 
 .portfolio-section .project-card .card .card-body .card-title {
-    color: var(--black-100);
+    color: var(--primary-color);
     margin-bottom: 50px;
 }
 
@@ -100,6 +102,7 @@ h5 {
     width: 160px;
     background-color: var(--action-color);
     color: var(--black-btn-color);
+    letter-spacing: 2px;
 }
 
 .portfolio-section .project-card .card .card-body .view-detail-btn:hover {
@@ -120,17 +123,17 @@ h5 {
     }
 
     .portfolio-section .projects-highlight-section {
-        height: 60vh;
-        border: 2px solid blue;
+        min-height: 10vh;
+        /* border: 2px solid blue; */
     }
 
     .portfolio-section .projects-highlight-section .project-sec-col {
-        height: 27vh;
+        min-height: 10vh;
         /* border: 2px solid green; */
     }
 
     .portfolio-section .projects-highlight-section .card .highlight-icon {
-        height: 50px;
+        height: 100px;
         margin: 20px auto 10px auto;
     }
 
@@ -168,13 +171,13 @@ TABLET VIEW
     }
 
     .portfolio-section .projects-highlight-section {
-        height: 130vh;
+        min-height: 10vh;
         /* height: 32vh; */
-        /* border: 2px solid purple; */
+        border: 2px solid purple;
     }
 
     .portfolio-section .projects-highlight-section .project-sec-col {
-        height: 16vh;
+        min-height: 10vh;
         /* border: 2px solid blue; */
     }
 

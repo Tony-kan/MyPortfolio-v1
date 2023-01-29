@@ -1,5 +1,6 @@
 .skill-section {
     background-color: var(--primary-color);
+    padding-top: 7rem !important;
 }
 
 .skill-section .row {
@@ -38,6 +39,7 @@ p {
     width: 160px;
     background-color: var(--action-color);
     color: var(--black-btn-color);
+    letter-spacing: 2px;
 }
 
 .skill-section .row button:hover {

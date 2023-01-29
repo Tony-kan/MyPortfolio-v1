@@ -1,5 +1,9 @@
 .contact-section {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
+    /* border: 2px solid yellow; */
+    
+    padding-top: 7rem !important;
+    
 }
 
 .contact-section .page-heading {
@@ -11,7 +15,7 @@
 .contact-section .row .contact-left-sect,
 .contact-right-sect {
     /* border: 3px solid red; */
-    height: 70vh;
+    min-height: 70vh;
 }
 
 .contact-section .row {
@@ -94,11 +98,12 @@ span {
 .contact-section .contact-right-sect .row .submit-btn {
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 40px;
     width: 160px;
     background-color: var(--action-color);
     color: var(--black-btn-color);
+    letter-spacing: 2px;
 }
 
 .contact-section .contact-right-sect .row .submit-btn:hover {
